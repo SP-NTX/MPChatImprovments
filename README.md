@@ -10,8 +10,8 @@ FlightGear Multiplayer chat improvments.
 - Canvas chat GUI
 - Easier to customize default message
 - Often used messages as just Multi-key command.
-- _'Dictionary' for frequently used words in aviation and their meaning_
-> note: _those things_ are actually developed
+- ***'Dictionary' for frequently used words in aviation and their meaning***
+> note: ***those things*** are actually developed
 
 ## Multi-key commands
 Those are some multikey command that are included in this addon:
