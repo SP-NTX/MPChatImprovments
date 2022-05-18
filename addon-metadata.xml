@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+  <meta>
+    <file-type type="string">FlightGear add-on metadata</file-type>
+    <format-version type="int">1</format-version>
+  </meta>
+  <addon>
+    <identifier type="string">sp.ntx.MPChatImprovments</identifier>
+    <name type="string">MPChatImprovments</name>
+    <version type="string">0.1.0</version> <!-- <release>.<version>.<bugfix>	-->
+
+
+    <authors>
+      <author>
+        <name type="string">SP-NTX</name>
+        <url type="string">https://github.com/SP-NTX</url>
+      </author>
+    </authors>
+
+
+    <short-description type="string">
+      MPChatImprovments
+    </short-description>
+
+    <long-description type="string">
+		There is no longer description, sorry...
+    </long-description>
+
+    <license>
+      <designation type="string">
+        GNU GPL version 2 or later
+      </designation>
+
+      <url type="string">
+        https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+      </url>
+    </license>
+
+    <min-FG-version type="string">2019.2.0</min-FG-version>
+    <max-FG-version type="string">none</max-FG-version>
+
+    <urls>
+
+      <code-repository type="string">
+        https://github.com/SP-NTX/MPChatImprovments
+      </code-repository>
+    </urls>
+
+    <tags>
+      <tag type="string">Multiplayer</tag>
+
+    </tags>
+
+   
+  </addon>
+</PropertyList>

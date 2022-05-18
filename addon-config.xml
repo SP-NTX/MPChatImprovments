@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+
+
+<PropertyList>
+  <input>
+    <keyboard n="0">
+      <multikey>
+	    <key n="77">
+        <name>M</name>
+        <desc>Multiplayer</desc>
+		<key n="99">
+			<name>c</name>
+			<desc>Chat menu</desc>
+			<key n="99">
+				<name>c</name>
+				<desc>Chat</desc>
+			<binding>
+				<command>dialog-show</command>
+				<dialog-name>chat-full</dialog-name>
+			</binding>
+			</key>
+		</key>
+		<key n="115">
+			<name>s</name>
+			<desc>Settings</desc>
+			<key n="99">
+				<name>c</name>
+				<desc>Connect to MP</desc>
+				 <binding>
+				<command>nasal</command>
+				<script>
+					fgcommand("multiplayer-connect",  props.Node.new({
+					"servername": getprop("/sim/multiplay/selected-server"),
+					"rxport": getprop("/sim/multiplay/rxport"),
+					"txport": getprop("/sim/multiplay/txport")
+					}));
+				</script> 
+			  </binding>
+			</key>
+			<key n="100">
+				<name>d</name>
+				<desc>Disconnect from MP</desc>
+			  <binding>
+				<command>multiplayer-disconnect</command>
+				<subsystem>mp</subsystem>
+			  </binding>
+			</key>
+			<key n="67">
+				<name>C</name>
+				<desc>Set callsign</desc>
+			  <binding>
+				<command>multiplayer-disconnect</command>
+				<subsystem>mp</subsystem>
+			  </binding>
+			  <key n="903">
+					<name>%s</name>
+					<desc>Callsign=%s</desc>
+					<binding>
+						<command>nasal</command>
+						<script>setprop("/sim/multiplay/callsign", arg[0])</script>
+					</binding>
+			   </key>
+			</key>
+		</key>
+	</key>
+	  </multikey>
+    </keyboard>
+  </input>
+</PropertyList>
