@@ -55,10 +55,24 @@
 			  <key n="903">
 					<name>%s</name>
 					<desc>Callsign=%s</desc>
+				  			  <binding>
+				<command>multiplayer-disconnect</command>
+				<subsystem>mp</subsystem>
+			  </binding>
 					<binding>
 						<command>nasal</command>
 						<script>setprop("/sim/multiplay/callsign", arg[0])</script>
 					</binding>
+				  				 <binding>
+				<command>nasal</command>
+				<script>
+					fgcommand("multiplayer-connect",  props.Node.new({
+					"servername": getprop("/sim/multiplay/selected-server"),
+					"rxport": getprop("/sim/multiplay/rxport"),
+					"txport": getprop("/sim/multiplay/txport")
+					}));
+				</script> 
+			  </binding>
 			   </key>
 			</key>
 		</key>
