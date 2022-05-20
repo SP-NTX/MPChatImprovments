@@ -2,6 +2,10 @@
 
 
 <PropertyList>
+<MPChatImprovments>
+
+<defaultMessage userarchive="y">Hello</defaultMessage>
+</MPChatImprovments>
   <input>
     <keyboard n="0">
       <multikey>
@@ -72,6 +76,18 @@ window.setCanvas(myCanvas);
 				</script> 
 			  </binding>
 			</key>
+			<key n="109">
+				<name>m</name>
+				<desc>Change the default message</desc>
+			  <key n="903">
+					<name>%s</name>
+					<desc>Default message=%s</desc>
+					<binding>
+						<command>nasal</command>
+						<script>setprop("/MPChatImprovments/defaultMessage", arg[0])</script>
+					</binding>
+			   </key>
+			</key>
 			<key n="100">
 				<name>d</name>
 				<desc>Disconnect from MP</desc>
@@ -94,6 +110,16 @@ window.setCanvas(myCanvas);
 						<command>nasal</command>
 						<script>setprop("/sim/multiplay/callsign", arg[0])</script>
 					</binding>
+									 <binding>
+				<command>nasal</command>
+				<script>
+					fgcommand("multiplayer-connect",  props.Node.new({
+					"servername": getprop("/sim/multiplay/selected-server"),
+					"rxport": getprop("/sim/multiplay/rxport"),
+					"txport": getprop("/sim/multiplay/txport")
+					}));
+				</script> 
+			  </binding>
 			   </key>
 			</key>
 		</key>
