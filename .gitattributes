@@ -1,1 +1,2 @@
-*.xml linguist-detectable=false
+*.nas    eol=lf
+*.xml    eol=lf
