@@ -11,6 +11,7 @@ FlightGear Multiplayer chat improvments.
 - TTS last chat message
 - Canvas chat GUI
 - Often used messages as just Multi-key command.
+- Automatic reactions for some messages when you set them on
 > note: ***those things*** are actually developed
 
 ## Multi-key commands
